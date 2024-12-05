@@ -12,6 +12,7 @@
 // for (let i of {'hi':3}) => iterates over keys
 // [].length for length
 // +x converts '32' to 32
+// NaN and isNaN() are things
 // Good luck!
 const { setup, p } = require('../setup');
 
@@ -23,16 +24,11 @@ if (!input) {
     process.exit(1);
 }
 
+// no assumptions this time
 let res = 0;
-const lines = input.trim().split`\n`;
 
-lines.forEach(line => {
-    const nums = line.split(/\s+/);
-    for (let i = 0; i < nums.length; i++) {
-        const n = nums[i];
-        // Add processing logic here
-    }
-});
+
+
 
 p(res);
 
