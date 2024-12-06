@@ -15,6 +15,7 @@
 // NaN and isNaN() are things
 // Good luck!
 const { setup, p } = require('../setup');
+const print = p;
 
 // Run setup
 const input = setup();
@@ -27,7 +28,7 @@ if (!input) {
 // no assumptions this time
 let res = 0;
 
-
+let lines = input.split('\n');
 
 
 p(res);
