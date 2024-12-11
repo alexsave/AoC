@@ -29,38 +29,9 @@ let res = 0;
 
 let lines = input.split('\n');
 
-//lines.pop()
-
-for(let i = 0; i < lines.length; i++) {
-    let line = lines[i];
-    for(let j = 0; j < line.length; j++) {
-
-
-
-    }
-}
+let startTime = performance.now();
 
 let row = lines[0].split(' ').map(x=>+x);
-
-let max = 111010774;
-
-
-
-//let struct = [row]
-const addToStruct = (n, struct) => {
-    let last = struct[struct.length-1];
-    if (last.length >= max){
-        struct.push([]);
-        last = struct[struct.length-1];
-    }
-
-    last.push(n);
-}
-
-const getFromStruct = (i, struct) => {
-    let arr = struct[(i/max)|0];
-    return arr[i%max]
-}
 
 // swtich this to 41 when you're ready
 for (let i = 0; i < 40; i++){
@@ -121,63 +92,43 @@ const sim = (start, n) => {
 // ok at this point, row is a list of something crazy. We can't add a single one more
 // But we just need to simulate +25 for each of it's elements. lets do it
 //
+//
 
+const cached35 = {}
 const cached15 = {}
+
+const sim35 = n => {
+    //let row = [n];
+    let row2 = sim(n, 20);
+    let sum = 0;
+    for (let k of row2){
+        if (!(k in cached15)){
+            print('\tcaclculating sim15 for ' + k);
+            cached15[k] = sim(k, 15).length;
+        }
+        sum += cached15[k];
+    }
+    return sum;
+}
+
 for (let i of row){
-    if (!(i in cached25)){
-        print(i);
-        // simulate 25
-        cached25[i] = sim(i, 35);
+    if (!(i in cached35)){
+        print('caclculating sim35 for ' + i);
+        // simulate 35
+        //cached25[i] = sim(i, 35);
+        // by going 0->5, then to 20, then sim(15)
+        //
+        cached35[i] = sim35(i);
+        
     }
     //} else {
-    res += cached25[i];
+    res += cached35[i];
 }
-
-/*for(let i = row.length-1; i>=0; i--){
-    let num = row[i];
-
-    print(i);
-    if(!(num in cached25)){
-        cached25[i] = sim(i, 35);
-    }
-    res += cached25[i];
-
-}*/
-
-
-// first, just run it on all numbers for 15
-//
-/*let at5 = [];
-for (let i of row){
-    print(i);
-    let arr = sim(i, 5);
-    //cached15[i] = arr.length;
-    at5.push(...arr);
-}
-print(at5);
-// now we have 7 numbers in cache
-
-let at30=[];
-for (let i of at15){
-    if (!(i in cached15){
-        print(i);
-        let arr = sim(i, 15);
-        cached15[i] = arr.length;
-        at30.push(...arr);
-    } else {
-        at30.push({is:cached15[i]}
-    }
-}*/
-// now we have 7 numbers in cache
-
-
-
-
-
-
-
-//print(row.length);
-
 
 p(res);
 
+// Some code to measure the execution time of...
+
+let endTime = performance.now();
+let elapsedTime = endTime - startTime; // Time in milliseconds
+console.log(`Elapsed time: ${elapsedTime}ms`);
