@@ -34,7 +34,7 @@ let startTime = performance.now();
 let row = lines[0].split(' ').map(x=>+x);
 
 // swtich this to 41 when you're ready
-for (let i = 0; i < 40; i++){
+for (let i = 0; i < 30; i++){
     print(i);
     print(row);
     let next = []
@@ -97,6 +97,9 @@ const sim = (start, n) => {
 const cached35 = {}
 const cached15 = {}
 
+const cached45 = {}
+const cached25 = {}
+
 const sim35 = n => {
     //let row = [n];
     let row2 = sim(n, 20);
@@ -111,7 +114,7 @@ const sim35 = n => {
     return sum;
 }
 
-for (let i of row){
+/*for (let i of row){
     if (!(i in cached35)){
         print('caclculating sim35 for ' + i);
         // simulate 35
@@ -123,6 +126,41 @@ for (let i of row){
     }
     //} else {
     res += cached35[i];
+}*/
+
+const sim25 = n => {
+    let row3 = sim(n, 10);
+    let sum2 = 0;
+    for (let l of row3) {
+        if (!(l in cached15)){
+            print('\t\tcaclculating sim15 for ' + l);
+            cached15[l] = sim(l, 15).length;
+        }
+        sum2 += cached15[l];
+    }
+    return sum2
+}
+
+const sim45 = n => {
+    //let row = [n];
+    let row2 = sim(n, 20);
+    let sum = 0;
+    for (let k of row2){
+        if (!(k in cached25)){
+            print('\tcaclculating sim25 for ' + k);
+            cached25[k] = sim25(k);
+        }
+        sum += cached25[k];
+    }
+    return sum;
+}
+
+for (let i of row){
+    if (!(i in cached45)){
+        print('caclculating sim45 for ' + i);
+        cached45[i] = sim45(i);
+    }
+    res += cached45[i];
 }
 
 p(res);
