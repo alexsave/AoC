@@ -25,11 +25,20 @@ if (!input) {
     process.exit(1);
 }
 
-// no assumptions this time
 let res = 0;
 
 let lines = input.split('\n');
 
+//lines.pop()
+
+for(let i = 0; i < lines.length; i++) {
+    let line = lines[i];
+    for(let j = 0; j < line.length; j++) {
+
+
+
+    }
+}
 
 p(res);
 
