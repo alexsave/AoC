@@ -35,8 +35,8 @@ let row = lines[0].split(' ').map(x=>+x);
 
 // swtich this to 41 when you're ready
 for (let i = 0; i < 30; i++){
-    print(i);
-    print(row);
+    ////print(i);
+    //print(row);
     let next = []
 
 
@@ -106,7 +106,7 @@ const sim35 = n => {
     let sum = 0;
     for (let k of row2){
         if (!(k in cached15)){
-            print('\tcaclculating sim15 for ' + k);
+            //print('\tcaclculating sim15 for ' + k);
             cached15[k] = sim(k, 15).length;
         }
         sum += cached15[k];
@@ -133,7 +133,7 @@ const sim25 = n => {
     let sum2 = 0;
     for (let l of row3) {
         if (!(l in cached15)){
-            print('\t\tcaclculating sim15 for ' + l);
+            //print('\t\tcaclculating sim15 for ' + l);
             cached15[l] = sim(l, 15).length;
         }
         sum2 += cached15[l];
@@ -147,7 +147,7 @@ const sim45 = n => {
     let sum = 0;
     for (let k of row2){
         if (!(k in cached25)){
-            print('\tcaclculating sim25 for ' + k);
+            //print('\tcaclculating sim25 for ' + k);
             cached25[k] = sim25(k);
         }
         sum += cached25[k];
@@ -157,7 +157,7 @@ const sim45 = n => {
 
 for (let i of row){
     if (!(i in cached45)){
-        print('caclculating sim45 for ' + i);
+        //print('caclculating sim45 for ' + i);
         cached45[i] = sim45(i);
     }
     res += cached45[i];
