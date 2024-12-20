@@ -216,8 +216,10 @@ toCheck.push(bestK);
 const helps = {}
 const counts = {}
 
+const found = {}
+
 while(toCheck.length > 0){
-    print(toCheck.length);
+    //print(toCheck.length);
     const point = toCheck.pop();
     if (checked.has(point))
         continue;
@@ -230,7 +232,38 @@ while(toCheck.length > 0){
     let [x,y] = fromKey(point);
     let d1 = dist[point].total;
 
-    //lets break walls
+    // ok I think we want to use manhattan distnace or smth
+
+    // roughtly:
+    //
+    for (let i = -20; i <= 20; i++){
+        for (let j = -20; j <= 20; j++){
+            let cDist = Math.abs(i)+Math.abs(j);
+            if (cDist > 20)
+                continue;
+
+            let k = toKey(x+j, y+i);
+
+            // not valid breakout.
+            if(!(k in dist))
+                continue;
+
+            let d2 = dist[k].total;
+            if(d1<=d2)
+                continue;
+
+            const diff = d1 - d2 - cDist;
+            found[point + '>' + k] = diff;
+            if (!(diff in counts))
+                counts[diff] = 0;
+            counts[diff] +=1;
+        }
+    }
+
+
+
+
+    /*//lets break walls
     for(let i = 0; i < arr.length;i++){
         let v = arr[i];
 
@@ -258,11 +291,14 @@ while(toCheck.length > 0){
 
         }catch(e){}
 
-    }
+    }*/
     
     checked.add(point);
 }
 
+//print(found);
+
+//print([...Object.entries(found)].filter(x=>+x[1]>=50));
 
 //print(helps);
 //
