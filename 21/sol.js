@@ -65,191 +65,190 @@ const dirPadCo = n => {
     }
 }
 
-// for lowest level, keypad
-let x1 = 2;
-let y1 = 3;
+// compeltely restart
+const diagCache = {};
 
-// fuck
-const findDiag = (x, y, dx, dy, coFunc, cur) => {
-    //if (isNaN(x) || isNaN(y))
-        //return null;
-    const [nox,noy] = coFunc('X');
-    //print([x,y,dx,dy, cur]);
-    if (x === nox && y === noy)
-        return null;
+const diag = (a,b,level) => {
+    let board = '';
+    let find = null;
 
-    if(dx === 0 && dy ===0)
-        return [cur];
+    if (level === 0) {
+        board = 'k';
+        find = keyPadCo;
+        // keypad
+    } else {
+        //dir
+        board = 'd';
+        find = dirPadCo;
+    }
+
+    const diagKey = [a,b,board].join(',');
+
+    if(diagKey in diagCache)
+        return diagCache[diagKey];
+
+    if (a === 'S')
+        a = 'A';
 
 
+    let [startX, startY] = find(a);
+    let [targetX, targetY] = find(b);
+    let [noX, noY] = find('X');
+
+    let dX = targetX - startX;
+    let dY = targetY - startY;
+
+    let path = [];
+    if (a === b/*dX === 0 && dY === 0*/){
+        // no move, same token
+        path = [''];
+    } else if (dX === 0){
+        path = [((dY<0? '^':'v').repeat(Math.abs(dY)))];
+    } else if (dY === 0) {
+        path = [((dX<0? '<':'>').repeat(Math.abs(dX)))];
+    } else {
+        //both non0
+
+        // try X then Y path first
+        let runX = startX;
+        let runY = startY;
+
+        let xyBad = false;
+        let xyPath = '';
+
+        for (let i = 0; i < Math.abs(dX); i++){
+            runX += dX < 0? -1 : 1;
+            xyPath += dX < 0? '<' : '>';
+            if (runX === noX && runY === noY){
+                xyBad = true;
+            }
+        }
+        for (let i = 0; i < Math.abs(dY); i++){
+            runY += dY < 0? -1 : 1;
+            xyPath += dY < 0? '^' : 'v';
+            if (runX === noX && runY === noY){
+                xyBad = true;
+            }
+        }
+
+        if (!xyBad)
+            path.push(xyPath);
 
 
-    if (dx === 0)
-        return [cur+((dy<0? '^':'v').repeat(Math.abs(dy)))];
-    if (dy === 0)
-        return [cur+((dx<0? '<':'>').repeat(Math.abs(dx)))];
-    let xDir = dx/Math.abs(dx);
-    let yDir = dy/Math.abs(dy);
+        runX = startX;
+        runY = startY;
+
+        let yxBad = false;
+        let yxPath = '';
+
+        for (let i = 0; i < Math.abs(dY); i++){
+            runY += dY < 0? -1 : 1;
+            yxPath += dY < 0? '^' : 'v';
+            if (runX === noX && runY === noY){
+                yxBad = true;
+            }
+        }
+        for (let i = 0; i < Math.abs(dX); i++){
+            runX += dX < 0? -1 : 1;
+            yxPath += dX < 0? '<' : '>';
+            if (runX === noX && runY === noY){
+                yxBad = true;
+            }
+        }
+        if (!yxBad)
+            path.push(yxPath);
+    }
     
-    //print('recursing');
-    let opt = [ 
-        findDiag(x+xDir, y, dx-xDir, dy, coFunc, cur+(dx<0?'<':'>')),
-        findDiag(x, y+yDir, dx, dy-yDir, coFunc, cur+(dy<0?'^':'v'))
-    ].filter(x=>x!==null);
-    return opt.flat();
-    //return cur.map(c=>opt.map(o=>x+o)).flat();
-
-
+    diagCache[diagKey] = path;
+    return path;
 }
 
-const expandPath = (seq, sx, sy, coFunc) => {
-    let x = sx;
-    let y = sy;
-    let paths = [''];
+const cache = {};
+let ops = 0;
 
-    for(let j = 0; j < seq.length; j++) {
-        let co = coFunc(seq[j]);
+const recurse = (seq, level) => {
+    const key = [seq,level].join(',');
+    if(key in cache)
+        return cache[key];
+    ops++;
+    print(' '.repeat(level) + seq);
+    // small for now
+    if (level == 1+25)
+        return seq.replace('S','').length;
 
-        let dx = co[0] - x;
-        let dy = co[1] - y;
-        //print([dx,dy]);
-
-        let need = [''];
-        // straightforward case
-
-        if (dx === 0 && dy === 0) {
-            // need A
-            //need = ['A']
+    let sum = 0;
+    for (let i = 0; i < seq.length-1; i++){
+        const [a,b] = seq.slice(i,i+2);
+        // it's weird but we need the 'S' at the start to get the right answ
+        //
+        let opts = diag(a,b,level);
+        
+        if (opts.length === 1){
+            // pretty simple
+            sseq = ('S') + (opts[0]) + ('A');
+            sum += recurse(sseq, level +1);
         } else {
-            if (dx === 0){
-                need = [(dy<0? '^':'v').repeat(Math.abs(dy))]
-            } else if (dy === 0) {
-                need = [(dx<0? '<':'>').repeat(Math.abs(dx))]
-            } else {
-                // need some efficient combo of x & y
-                // but most efficient has tob e all x then all y or all y then all x, right?
-                // NO becuase on higher levels, if we need to keep going between A and < it's a lot
-                //
-                //
-                // the real complex part is that we can't hit the empty spot
-                
-                need = findDiag(x,y, dx, dy, coFunc,'');
-                //print([x, y, dx, dy, need]);
-                //exit(1);
-
-                /*need = [
-                    (dx<0? '<':'>').repeat(Math.abs(dx))+
-                        (dy<0? '^':'v').repeat(Math.abs(dy)),
-                    (dy<0? '^':'v').repeat(Math.abs(dy))+
-                        (dx<0? '<':'>').repeat(Math.abs(dx))
-                ]*/
-            }
-        }
-        need = need.map(x=>x+'A')
-        //print(need);
-
-        // advance
-        paths = paths.map(x => need.map(a => x+a)).flat();
-
-        [x, y] = co;
-    }
-    return paths;
-}
-
-let x2 = 2;
-let y2 = 0;
-
-const simClick = (val, x, y) => {
-    if (val === '<')
-        x -= 1;
-    if (val === '>')
-        x += 1;
-    if (val === '^')
-        y -= 1;
-    if (val === 'v')
-        y += 1;
-    return [x,y];
-}
-
-const simulate = seq => {
-    //depress
-    let xd = 2;
-    let yd = 3;
-
-    // radiation
-    let xr = 2;
-    let yr = 0;
-
-    //cold
-    let xc = 2;
-    let yc = 0;
-
-    let last = '';
-
-    for (let i = 0; i < seq.length; i++){
-        let val = seq[i];
-
-
-        if (val !== 'A')
-            [xc,yc] = simClick(val, xc, yc);
-        else {
-            let c = dirPad[yc][xc];
-            if (c !== 'A')
-                [xr,yr] = simClick(c, xr, yr);
-            else {
-                let r = dirPad[yr][xr];
-                if (r !== 'A')
-                    [xd,yd] = simClick(r, xd,yd);
-                else {
-                    let d = keyPad[yd][xd];
-                    print('PRESS ' + d);
-                    last += d;
-                }
-            }
-
+            // compare both. Luckily we don't need to do this more than once, and cache it
+            if (opts.length !== 2)
+                print("WTF");
+            let sseq0 = ('S') + (opts[0]) + ('A');
+            let sseq1 = ('S') + (opts[1]) + ('A');
+            // please don't be too slow
+            let score0 = recurse(sseq0, level+1);
+            let score1 = recurse(sseq1, level+1);
+            sum += Math.min(score0, score1);
         }
 
-        let c = dirPad[yc][xc];
-        let r = dirPad[yr][xr];
-        let d = keyPad[yd][xd];
-
-        print([val, c,r,d]);
     }
-    return last;
+
+    print(' '.repeat(level) + seq + ' ' + sum);
+    cache[key] = sum;
+    return sum;
 
 }
 
-for(let i = 0; i < lines.length; i++) {
+for(let i = 0; i < lines.length; i++){
     let line = lines[i];
 
-    let first = expandPath(line, x1, y1, keyPadco);
+    let shortest = recurse('S'+line, 0);
+    print(line);
+    print(shortest);
 
-    let dir = first.map(p => expandPath(p, x2, y2, dirPadCo)).flat();
-
-    for (let j = 0; j < 24; j++)
-        dir = dir.map(p => expandPath(p, x2, y2, dirPadCo)).flat();
-
-    let shortest = dir.sort((a,b)=> a.length-b.length)[0];
-    print(line + ': ' + shortest);
-    res += +(line.replace('A',''))*shortest.length;
-
-    //print(line);
-    let depress = expandPath(line, x1, y1, keyPadCo);
-    //print(depress);
-
-    let radiation = depress.map(p => expandPath(p, x2, y2, dirPadCo)).flat();
-    //print(radiation);
-
-    let cold = radiation.map(p => expandPath(p, x2, y2, dirPadCo)).flat();
-    // wait a minute, they're all the same fucking length
-
-    // but gonna send it first
-
-    // great now we need to fuckign simulate it
-
-    //simulate(shortest);
-
+    res += +(line.replace('A',''))*shortest;
+    print(ops);
 }
 
-p(res);
+
+// ah this so clean but not quite
+// we're missing somethign
+// 836A correct is <vA<AA>>^AvA<^A>AAAvA^A<v<A>A>^AAvA^A<A>A<v<A>>^AvA^A<v<A>A>^AAvA<^A>A (70)
+// 836A this has len 74
+//
+// 540A correct is <vA<AA>>^AvA<^A>AAvA^A<vA<AA>>^AvAA<^A>A<vA>^A<v<A>>^AAvA<^A>A<vA>^A<A>A (72)
+// 540A this has len 72
+//
+// 965A correct is <v<A>>^AAAvA^A<v<A>A>^AvA<^A>A<vA<AA>>^AvAA<^A>A<v<A>A>^AAvA^A<A>A (66)
+// 965A this has len 70
+//
+// 480A correct is <v<A>>^AA<vA<A>>^AAvAA<^A>A<vA>^A<v<A>^A>AvA^A<v<A>A>^AAAvA<^A>A<vA>^A<A>A (74)
+// 480A this has len 74
+// 789A correct is <v<A>>^AAA<vA<A>>^AAvAA<^A>A<vA>^A<A>A<vA>^A<A>A<v<A>A>^AAAvA<^A>A (66)
+// 789A this has len 66
+
+// diving into 836A
+// getting from S to 8 is identical
+// 8 to 3 is actually different. 22 vs 18
+// 3 to 6 matches 
+// 6 to A matches 
+//
+// let's look at 8 to 3
+// if we swap priortiy of xyPath with yXPath, that does fix 8 to 3 but makes another correspondingly longer
+// on level 1, we do  >vvA, they do vv>A
+// interestingly, they did <v< on the highest level, but it didn't really affect anything over v<<
+// how is taht possible? it's the highestlevel so distances are the same. dont' worry
+// the real trick is that we need to TEST xyPath and yxPath
+// FUCK
+
+
+print(res);
 
