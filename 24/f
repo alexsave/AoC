@@ -1,0 +1,699 @@
+{
+  x00: 1,
+  x01: 1,
+  x02: 0,
+  x03: 0,
+  x04: 0,
+  x05: 1,
+  x06: 0,
+  x07: 1,
+  x08: 1,
+  x09: 0,
+  x10: 1,
+  x11: 0,
+  x12: 0,
+  x13: 0,
+  x14: 1,
+  x15: 0,
+  x16: 1,
+  x17: 1,
+  x18: 0,
+  x19: 1,
+  x20: 0,
+  x21: 0,
+  x22: 1,
+  x23: 1,
+  x24: 1,
+  x25: 1,
+  x26: 0,
+  x27: 1,
+  x28: 1,
+  x29: 0,
+  x30: 1,
+  x31: 0,
+  x32: 0,
+  x33: 1,
+  x34: 1,
+  x35: 0,
+  x36: 1,
+  x37: 1,
+  x38: 1,
+  x39: 1,
+  x40: 1,
+  x41: 1,
+  x42: 1,
+  x43: 1,
+  x44: 1,
+  y00: 1,
+  y01: 0,
+  y02: 1,
+  y03: 1,
+  y04: 0,
+  y05: 0,
+  y06: 1,
+  y07: 1,
+  y08: 0,
+  y09: 1,
+  y10: 1,
+  y11: 1,
+  y12: 1,
+  y13: 0,
+  y14: 1,
+  y15: 1,
+  y16: 1,
+  y17: 0,
+  y18: 1,
+  y19: 0,
+  y20: 0,
+  y21: 1,
+  y22: 0,
+  y23: 1,
+  y24: 0,
+  y25: 1,
+  y26: 0,
+  y27: 1,
+  y28: 0,
+  y29: 0,
+  y30: 1,
+  y31: 1,
+  y32: 0,
+  y33: 1,
+  y34: 0,
+  y35: 0,
+  y36: 1,
+  y37: 0,
+  y38: 1,
+  y39: 0,
+  y40: 0,
+  y41: 0,
+  y42: 1,
+  y43: 0,
+  y44: 1
+}
+{
+  pkh: { input: [ 'y08', 'x08' ], op: 'AND' },
+  bbk: { input: [ 'grg', 'twt' ], op: 'AND' },
+  vgs: { input: [ 'vvt', 'wwt' ], op: 'OR' },
+  pmq: { input: [ 'x10', 'y10' ], op: 'XOR' },
+  z10: { input: [ 'pmq', 'hkf' ], op: 'XOR' },
+  hkf: { input: [ 'vmw', 'bfb' ], op: 'OR' },
+  kmj: { input: [ 'twp', 'qbq' ], op: 'OR' },
+  qhk: { input: [ 'qns', 'mwj' ], op: 'AND' },
+  z02: { input: [ 'dqm', 'cqp' ], op: 'XOR' },
+  htp: { input: [ 'snr', 'crb' ], op: 'AND' },
+  z09: { input: [ 'jwv', 'dgj' ], op: 'XOR' },
+  wkq: { input: [ 'sjf', 'rwf' ], op: 'OR' },
+  dqm: { input: [ 'y02', 'x02' ], op: 'XOR' },
+  rss: { input: [ 'msw', 'qqp' ], op: 'AND' },
+  z26: { input: [ 'fgv', 'bhw' ], op: 'XOR' },
+  ftb: { input: [ 'y03', 'x03' ], op: 'AND' },
+  z24: { input: [ 'kmj', 'fnh' ], op: 'XOR' },
+  wtt: { input: [ 'jhv', 'bkq' ], op: 'XOR' },
+  knf: { input: [ 'x27', 'y27' ], op: 'XOR' },
+  jhf: { input: [ 'y40', 'x40' ], op: 'XOR' },
+  kkq: { input: [ 'gmq', 'nrs' ], op: 'OR' },
+  ndn: { input: [ 'y03', 'x03' ], op: 'XOR' },
+  hfj: { input: [ 'x25', 'y25' ], op: 'XOR' },
+  rvf: { input: [ 'x33', 'y33' ], op: 'AND' },
+  vrq: { input: [ 'wkh', 'pmn' ], op: 'AND' },
+  fhw: { input: [ 'mgg', 'hbf' ], op: 'OR' },
+  wqr: { input: [ 'nrr', 'rtk' ], op: 'OR' },
+  mtk: { input: [ 'x00', 'y00' ], op: 'AND' },
+  z30: { input: [ 'crb', 'snr' ], op: 'XOR' },
+  qns: { input: [ 'y37', 'x37' ], op: 'XOR' },
+  snr: { input: [ 'kgw', 'wms' ], op: 'OR' },
+  jwv: { input: [ 'y09', 'x09' ], op: 'XOR' },
+  jjp: { input: [ 'mtk', 'kvc' ], op: 'AND' },
+  kvc: { input: [ 'x01', 'y01' ], op: 'XOR' },
+  fpm: { input: [ 'jgg', 'bsn' ], op: 'AND' },
+  drd: { input: [ 'kvt', 'ftb' ], op: 'OR' },
+  tfs: { input: [ 'x15', 'y15' ], op: 'AND' },
+  jgv: { input: [ 'x34', 'y34' ], op: 'XOR' },
+  vjg: { input: [ 'y44', 'x44' ], op: 'XOR' },
+  fqr: { input: [ 'x21', 'y21' ], op: 'XOR' },
+  rwh: { input: [ 'x36', 'y36' ], op: 'XOR' },
+  kgr: { input: [ 'y30', 'x30' ], op: 'AND' },
+  rfq: { input: [ 'sqg', 'hfb' ], op: 'OR' },
+  kbj: { input: [ 'x05', 'y05' ], op: 'XOR' },
+  jhv: { input: [ 'rjq', 'skn' ], op: 'OR' },
+  bmp: { input: [ 'y17', 'x17' ], op: 'AND' },
+  jwb: { input: [ 'x28', 'y28' ], op: 'AND' },
+  vrj: { input: [ 'x44', 'y44' ], op: 'AND' },
+  z23: { input: [ 'wwn', 'gwm' ], op: 'XOR' },
+  gsr: { input: [ 'y39', 'x39' ], op: 'AND' },
+  z15: { input: [ 'wkq', 'tfv' ], op: 'XOR' },
+  sst: { input: [ 'x31', 'y31' ], op: 'AND' },
+  twt: { input: [ 'x08', 'y08' ], op: 'XOR' },
+  pjp: { input: [ 'wnf', 'rsk' ], op: 'AND' },
+  rwf: { input: [ 'mmr', 'qdc' ], op: 'AND' },
+  jsr: { input: [ 'y22', 'x22' ], op: 'XOR' },
+  hhn: { input: [ 'pnj', 'bcc' ], op: 'OR' },
+  kth: { input: [ 'fpm', 'wtv' ], op: 'OR' },
+  z22: { input: [ 'kkq', 'jsr' ], op: 'XOR' },
+  z33: { input: [ 'srn', 'kth' ], op: 'XOR' },
+  tkc: { input: [ 'vrq', 'mrt' ], op: 'OR' },
+  qbq: { input: [ 'wwn', 'gwm' ], op: 'AND' },
+  z40: { input: [ 'jhf', 'mdn' ], op: 'XOR' },
+  tqf: { input: [ 'y13', 'x13' ], op: 'XOR' },
+  z01: { input: [ 'kvc', 'mtk' ], op: 'XOR' },
+  z35: { input: [ 'stg', 'kdv' ], op: 'XOR' },
+  z08: { input: [ 'grg', 'twt' ], op: 'XOR' },
+  fjh: { input: [ 'kkq', 'jsr' ], op: 'AND' },
+  rjm: { input: [ 'tmd', 'shm' ], op: 'AND' },
+  gnp: { input: [ 'nvq', 'chk' ], op: 'AND' },
+  qqp: { input: [ 'twb', 'ptq' ], op: 'OR' },
+  bsn: { input: [ 'x32', 'y32' ], op: 'XOR' },
+  bkq: { input: [ 'y39', 'x39' ], op: 'XOR' },
+  stg: { input: [ 'mph', 'vbp' ], op: 'OR' },
+  rks: { input: [ 'x02', 'y02' ], op: 'AND' },
+  frh: { input: [ 'dtj', 'hfj' ], op: 'AND' },
+  qmr: { input: [ 'y43', 'x43' ], op: 'XOR' },
+  z28: { input: [ 'chk', 'nvq' ], op: 'XOR' },
+  wnf: { input: [ 'x16', 'y16' ], op: 'AND' },
+  ghf: { input: [ 'y06', 'x06' ], op: 'XOR' },
+  qjq: { input: [ 'rhr', 'ccq' ], op: 'OR' },
+  rjq: { input: [ 'x38', 'y38' ], op: 'AND' },
+  twb: { input: [ 'tsf', 'dtb' ], op: 'AND' },
+  tfv: { input: [ 'x15', 'y15' ], op: 'XOR' },
+  skn: { input: [ 'vds', 'gdk' ], op: 'AND' },
+  z36: { input: [ 'hhn', 'rwh' ], op: 'XOR' },
+  bjf: { input: [ 'x40', 'y40' ], op: 'AND' },
+  nvq: { input: [ 'wtd', 'cks' ], op: 'OR' },
+  vds: { input: [ 'jpk', 'qhk' ], op: 'OR' },
+  qdc: { input: [ 'x14', 'y14' ], op: 'XOR' },
+  ptq: { input: [ 'y19', 'x19' ], op: 'AND' },
+  gqj: { input: [ 'fnh', 'kmj' ], op: 'AND' },
+  smg: { input: [ 'pjp', 'vtj' ], op: 'OR' },
+  tmd: { input: [ 'x11', 'y11' ], op: 'XOR' },
+  dgj: { input: [ 'bbk', 'pkh' ], op: 'OR' },
+  z39: { input: [ 'bkq', 'jhv' ], op: 'AND' },
+  krp: { input: [ 'y07', 'x07' ], op: 'AND' },
+  crj: { input: [ 'hkf', 'pmq' ], op: 'AND' },
+  cdk: { input: [ 'y22', 'x22' ], op: 'AND' },
+  mmr: { input: [ 'knb', 'vkk' ], op: 'OR' },
+  z38: { input: [ 'vds', 'gdk' ], op: 'XOR' },
+  qkq: { input: [ 'jhf', 'mdn' ], op: 'AND' },
+  z45: { input: [ 'vrj', 'gkc' ], op: 'OR' },
+  mrt: { input: [ 'x41', 'y41' ], op: 'AND' },
+  z34: { input: [ 'jgv', 'dkh' ], op: 'XOR' },
+  vtj: { input: [ 'y16', 'x16' ], op: 'XOR' },
+  dtj: { input: [ 'rcf', 'gqj' ], op: 'OR' },
+  dkh: { input: [ 'rvf', 'bqr' ], op: 'OR' },
+  swn: { input: [ 'x25', 'y25' ], op: 'AND' },
+  z31: { input: [ 'dbv', 'vhs' ], op: 'XOR' },
+  fgq: { input: [ 'y12', 'x12' ], op: 'XOR' },
+  kcf: { input: [ 'y20', 'x20' ], op: 'AND' },
+  mjj: { input: [ 'rss', 'kcf' ], op: 'OR' },
+  z25: { input: [ 'hfj', 'dtj' ], op: 'XOR' },
+  sjf: { input: [ 'x14', 'y14' ], op: 'AND' },
+  z17: { input: [ 'fpd', 'smg' ], op: 'XOR' },
+  z21: { input: [ 'x21', 'y21' ], op: 'AND' },
+  prt: { input: [ 'x43', 'y43' ], op: 'AND' },
+  vhs: { input: [ 'x31', 'y31' ], op: 'XOR' },
+  rsk: { input: [ 'grv', 'tfs' ], op: 'OR' },
+  srn: { input: [ 'y33', 'x33' ], op: 'XOR' },
+  z20: { input: [ 'msw', 'qqp' ], op: 'XOR' },
+  mdn: { input: [ 'gsr', 'wtt' ], op: 'OR' },
+  crb: { input: [ 'x30', 'y30' ], op: 'XOR' },
+  rcf: { input: [ 'y24', 'x24' ], op: 'AND' },
+  bhw: { input: [ 'frh', 'swn' ], op: 'OR' },
+  kvt: { input: [ 'htm', 'ndn' ], op: 'AND' },
+  hbf: { input: [ 'x06', 'y06' ], op: 'AND' },
+  kdv: { input: [ 'x35', 'y35' ], op: 'XOR' },
+  bqr: { input: [ 'srn', 'kth' ], op: 'AND' },
+  bfb: { input: [ 'dgj', 'jwv' ], op: 'AND' },
+  z32: { input: [ 'bsn', 'jgg' ], op: 'XOR' },
+  tff: { input: [ 'rjm', 'skj' ], op: 'OR' },
+  mpv: { input: [ 'gcf', 'fhw' ], op: 'AND' },
+  cqp: { input: [ 'vfb', 'jjp' ], op: 'OR' },
+  z00: { input: [ 'x00', 'y00' ], op: 'XOR' },
+  shm: { input: [ 'crj', 'fgc' ], op: 'OR' },
+  z12: { input: [ 'tff', 'fgq' ], op: 'XOR' },
+  z37: { input: [ 'mwj', 'qns' ], op: 'XOR' },
+  gkc: { input: [ 'vjg', 'kmg' ], op: 'AND' },
+  dtb: { input: [ 'x19', 'y19' ], op: 'XOR' },
+  z18: { input: [ 'hvs', 'tsn' ], op: 'XOR' },
+  z19: { input: [ 'dtb', 'tsf' ], op: 'XOR' },
+  srp: { input: [ 'y05', 'x05' ], op: 'AND' },
+  kgw: { input: [ 'kkh', 'bsb' ], op: 'AND' },
+  htm: { input: [ 'rks', 'trv' ], op: 'OR' },
+  mgg: { input: [ 'frn', 'ghf' ], op: 'AND' },
+  frn: { input: [ 'qjq', 'kbj' ], op: 'XOR' },
+  z27: { input: [ 'knf', 'vgs' ], op: 'XOR' },
+  vmw: { input: [ 'y09', 'x09' ], op: 'AND' },
+  dbc: { input: [ 'x36', 'y36' ], op: 'AND' },
+  wtd: { input: [ 'knf', 'vgs' ], op: 'AND' },
+  wwn: { input: [ 'y23', 'x23' ], op: 'XOR' },
+  z16: { input: [ 'wnf', 'rsk' ], op: 'XOR' },
+  kkh: { input: [ 'y29', 'x29' ], op: 'XOR' },
+  z44: { input: [ 'vjg', 'kmg' ], op: 'XOR' },
+  dbv: { input: [ 'htp', 'kgr' ], op: 'OR' },
+  z03: { input: [ 'htm', 'ndn' ], op: 'XOR' },
+  z13: { input: [ 'rfq', 'tqf' ], op: 'XOR' },
+  nrs: { input: [ 'mjj', 'fqr' ], op: 'AND' },
+  z07: { input: [ 'gcf', 'fhw' ], op: 'XOR' },
+  frs: { input: [ 'qmr', 'wqr' ], op: 'AND' },
+  wtv: { input: [ 'x32', 'y32' ], op: 'AND' },
+  gcf: { input: [ 'x07', 'y07' ], op: 'XOR' },
+  tsf: { input: [ 'gmf', 'pvh' ], op: 'OR' },
+  gmq: { input: [ 'mjj', 'fqr' ], op: 'XOR' },
+  mwj: { input: [ 'qqs', 'dbc' ], op: 'OR' },
+  grg: { input: [ 'krp', 'mpv' ], op: 'OR' },
+  vbp: { input: [ 'x34', 'y34' ], op: 'AND' },
+  hfb: { input: [ 'tff', 'fgq' ], op: 'AND' },
+  rhr: { input: [ 'drd', 'wkb' ], op: 'AND' },
+  vkk: { input: [ 'tqf', 'rfq' ], op: 'AND' },
+  knb: { input: [ 'x13', 'y13' ], op: 'AND' },
+  vvt: { input: [ 'bhw', 'fgv' ], op: 'AND' },
+  qqs: { input: [ 'hhn', 'rwh' ], op: 'AND' },
+  jcf: { input: [ 'kbj', 'qjq' ], op: 'AND' },
+  wkh: { input: [ 'y41', 'x41' ], op: 'XOR' },
+  vfb: { input: [ 'y01', 'x01' ], op: 'AND' },
+  mph: { input: [ 'jgv', 'dkh' ], op: 'AND' },
+  bsb: { input: [ 'gnp', 'jwb' ], op: 'OR' },
+  gwm: { input: [ 'cdk', 'fjh' ], op: 'OR' },
+  kmg: { input: [ 'prt', 'frs' ], op: 'OR' },
+  fpd: { input: [ 'x17', 'y17' ], op: 'XOR' },
+  rtk: { input: [ 'y42', 'x42' ], op: 'AND' },
+  tqm: { input: [ 'fpd', 'smg' ], op: 'AND' },
+  gdw: { input: [ 'dbv', 'vhs' ], op: 'AND' },
+  wms: { input: [ 'y29', 'x29' ], op: 'AND' },
+  z29: { input: [ 'kkh', 'bsb' ], op: 'XOR' },
+  trv: { input: [ 'cqp', 'dqm' ], op: 'AND' },
+  gmf: { input: [ 'hvs', 'tsn' ], op: 'AND' },
+  grv: { input: [ 'wkq', 'tfv' ], op: 'AND' },
+  ccq: { input: [ 'x04', 'y04' ], op: 'AND' },
+  msw: { input: [ 'x20', 'y20' ], op: 'XOR' },
+  fgv: { input: [ 'y26', 'x26' ], op: 'XOR' },
+  z14: { input: [ 'mmr', 'qdc' ], op: 'XOR' },
+  z06: { input: [ 'ghf', 'frn' ], op: 'XOR' },
+  wwt: { input: [ 'y26', 'x26' ], op: 'AND' },
+  jgg: { input: [ 'sst', 'gdw' ], op: 'OR' },
+  z41: { input: [ 'pmn', 'wkh' ], op: 'XOR' },
+  wkb: { input: [ 'y04', 'x04' ], op: 'XOR' },
+  chk: { input: [ 'y28', 'x28' ], op: 'XOR' },
+  z43: { input: [ 'wqr', 'qmr' ], op: 'XOR' },
+  bcc: { input: [ 'kdv', 'stg' ], op: 'AND' },
+  pvh: { input: [ 'y18', 'x18' ], op: 'AND' },
+  z42: { input: [ 'mvk', 'tkc' ], op: 'XOR' },
+  cks: { input: [ 'x27', 'y27' ], op: 'AND' },
+  pmn: { input: [ 'bjf', 'qkq' ], op: 'OR' },
+  nrr: { input: [ 'tkc', 'mvk' ], op: 'AND' },
+  gdk: { input: [ 'y38', 'x38' ], op: 'XOR' },
+  jpk: { input: [ 'y37', 'x37' ], op: 'AND' },
+  twp: { input: [ 'x23', 'y23' ], op: 'AND' },
+  tsn: { input: [ 'tqm', 'bmp' ], op: 'OR' },
+  z04: { input: [ 'wkb', 'drd' ], op: 'XOR' },
+  mvk: { input: [ 'x42', 'y42' ], op: 'XOR' },
+  pnj: { input: [ 'y35', 'x35' ], op: 'AND' },
+  z11: { input: [ 'shm', 'tmd' ], op: 'XOR' },
+  fnh: { input: [ 'y24', 'x24' ], op: 'XOR' },
+  skj: { input: [ 'x11', 'y11' ], op: 'AND' },
+  fgc: { input: [ 'x10', 'y10' ], op: 'AND' },
+  z05: { input: [ 'srp', 'jcf' ], op: 'OR' },
+  sqg: { input: [ 'y12', 'x12' ], op: 'AND' },
+  hvs: { input: [ 'y18', 'x18' ], op: 'XOR' }
+}
+bbk: 73 {"input":["grg","twt"],"op":"AND","val":1}
+bcc: 19,2 {"input":["kdv","stg"],"op":"AND","val":0}
+bfb: 71 {"input":["dgj","jwv"],"op":"AND","val":1}
+bhw: 38,3,1 {"input":["frh","swn"],"op":"OR","val":1}
+bjf: 9,4,2 {"input":["x40","y40"],"op":"AND","val":0}
+bkq: 12,7,5,3,1 {"input":["y39","x39"],"op":"XOR","val":1}
+bmp: 55 {"input":["y17","x17"],"op":"AND","val":0}
+bqr: 23 {"input":["srn","kth"],"op":"AND","val":0}
+bsb: 32,3,1 {"input":["gnp","jwb"],"op":"OR","val":1}
+bsn: 26,3,1 {"input":["x32","y32"],"op":"XOR","val":0}
+ccq: 81,6,4,2 {"input":["x04","y04"],"op":"AND","val":0}
+cdk: 45,2 {"input":["y22","x22"],"op":"AND","val":0}
+chk: 34,1 {"input":["y28","x28"],"op":"XOR","val":1}
+cks: 35 {"input":["x27","y27"],"op":"AND","val":1}
+cqp: 86,1 {"input":["vfb","jjp"],"op":"OR","val":1}
+crb: 30,1 {"input":["x30","y30"],"op":"XOR","val":0}
+crj: 69 {"input":["hkf","pmq"],"op":"AND","val":0}
+dbc: 17 {"input":["x36","y36"],"op":"AND","val":1}
+dbv: 28,1 {"input":["htp","kgr"],"op":"OR","val":1}
+dgj: 72,1 {"input":["bbk","pkh"],"op":"OR","val":1}
+dkh: 22,1 {"input":["rvf","bqr"],"op":"OR","val":1}
+dqm: 86,1 {"input":["y02","x02"],"op":"XOR","val":1}
+drd: 82,7,5,3,1 {"input":["kvt","ftb"],"op":"OR","val":1}
+dtb: 52,1 {"input":["x19","y19"],"op":"XOR","val":1}
+dtj: 40,1 {"input":["rcf","gqj"],"op":"OR","val":1}
+fgc: 69 {"input":["x10","y10"],"op":"AND","val":1}
+fgq: 66,1 {"input":["y12","x12"],"op":"XOR","val":1}
+fgv: 38,3,1 {"input":["y26","x26"],"op":"XOR","val":0}
+fhw: 76,1 {"input":["mgg","hbf"],"op":"OR","val":0}
+fjh: 45,2 {"input":["kkq","jsr"],"op":"AND","val":0}
+fnh: 42,1 {"input":["y24","x24"],"op":"XOR","val":1}
+fpd: 56,1 {"input":["x17","y17"],"op":"XOR","val":1}
+fpm: 25,2 {"input":["jgg","bsn"],"op":"AND","val":0}
+fqr: 48,5,3,1 {"input":["x21","y21"],"op":"XOR","val":1}
+frh: 39 {"input":["dtj","hfj"],"op":"AND","val":0}
+frn: 78,3,1 {"input":["srp","jcf"],"op":"OR","val":0}
+frs: 3 {"input":["qmr","wqr"],"op":"AND","val":1}
+ftb: 83 {"input":["y03","x03"],"op":"AND","val":0}
+gcf: 76,1 {"input":["x07","y07"],"op":"XOR","val":0}
+gdk: 14,1 {"input":["y38","x38"],"op":"XOR","val":0}
+gdw: 27 {"input":["dbv","vhs"],"op":"AND","val":1}
+ghf: 78,3,1 {"input":["y06","x06"],"op":"XOR","val":1}
+gkc: 1 {"input":["vjg","kmg"],"op":"AND","val":0}
+gmf: 53 {"input":["hvs","tsn"],"op":"AND","val":1}
+gmq: 47,4,2 {"input":["x21","y21"],"op":"AND","val":0}
+gnp: 33 {"input":["nvq","chk"],"op":"AND","val":1}
+gqj: 41 {"input":["fnh","kmj"],"op":"AND","val":1}
+grg: 74,1 {"input":["krp","mpv"],"op":"OR","val":1}
+grv: 59 {"input":["wkq","tfv"],"op":"AND","val":1}
+gsr: 11,6,4,2 {"input":["y39","x39"],"op":"AND","val":0}
+gwm: 44,1 {"input":["cdk","fjh"],"op":"OR","val":0}
+hbf: 77,2 {"input":["x06","y06"],"op":"AND","val":0}
+hfb: 65 {"input":["tff","fgq"],"op":"AND","val":1}
+hfj: 40,1 {"input":["x25","y25"],"op":"XOR","val":0}
+hhn: 18,1 {"input":["pnj","bcc"],"op":"OR","val":0}
+hkf: 70,1 {"input":["vmw","bfb"],"op":"OR","val":1}
+htm: 84,1 {"input":["rks","trv"],"op":"OR","val":1}
+htp: 29 {"input":["snr","crb"],"op":"AND","val":0}
+hvs: 54,1 {"input":["y18","x18"],"op":"XOR","val":1}
+jcf: 79,4,2 {"input":["kbj","qjq"],"op":"AND","val":0}
+jgg: 26,3,1 {"input":["sst","gdw"],"op":"OR","val":1}
+jgv: 22,1 {"input":["x34","y34"],"op":"XOR","val":1}
+jhf: 10,5,3,1 {"input":["y40","x40"],"op":"XOR","val":1}
+jhv: 12,7,5,3,1 {"input":["rjq","skn"],"op":"OR","val":1}
+jjp: 87 {"input":["mtk","kvc"],"op":"AND","val":1}
+jpk: 15 {"input":["y37","x37"],"op":"AND","val":0}
+jsr: 46,3,1 {"input":["y22","x22"],"op":"XOR","val":1}
+jwb: 33 {"input":["x28","y28"],"op":"AND","val":0}
+jwv: 72,1 {"input":["y09","x09"],"op":"XOR","val":1}
+kbj: 80,5,3,1 {"input":["x05","y05"],"op":"XOR","val":1}
+kcf: 49,6,4,2 {"input":["y20","x20"],"op":"AND","val":0}
+kdv: 20,3,1 {"input":["x35","y35"],"op":"XOR","val":0}
+kgr: 29 {"input":["y30","x30"],"op":"AND","val":1}
+kgw: 31,2 {"input":["kkh","bsb"],"op":"AND","val":0}
+kkh: 32,3,1 {"input":["y29","x29"],"op":"XOR","val":0}
+kkq: 46,3,1 {"input":["gmq","nrs"],"op":"OR","val":0}
+kmg: 2,1 {"input":["prt","frs"],"op":"OR","val":1}
+kmj: 42,1 {"input":["twp","qbq"],"op":"OR","val":1}
+knb: 63,2 {"input":["x13","y13"],"op":"AND","val":0}
+knf: 36,1 {"input":["x27","y27"],"op":"XOR","val":0}
+krp: 75 {"input":["y07","x07"],"op":"AND","val":1}
+kth: 24,1 {"input":["fpm","wtv"],"op":"OR","val":0}
+kvc: 88,1 {"input":["x01","y01"],"op":"XOR","val":1}
+kvt: 83 {"input":["htm","ndn"],"op":"AND","val":1}
+mdn: 10,5,3,1 {"input":["gsr","wtt"],"op":"OR","val":0}
+mgg: 77,2 {"input":["frn","ghf"],"op":"AND","val":0}
+mjj: 48,5,3,1 {"input":["rss","kcf"],"op":"OR","val":0}
+mmr: 62,1 {"input":["knb","vkk"],"op":"OR","val":0}
+mph: 21 {"input":["jgv","dkh"],"op":"AND","val":1}
+mpv: 75 {"input":["gcf","fhw"],"op":"AND","val":0}
+mrt: 7,2 {"input":["x41","y41"],"op":"AND","val":0}
+msw: 50,7,5,3,1 {"input":["x20","y20"],"op":"XOR","val":0}
+mtk: 88,1 {"input":["x00","y00"],"op":"AND","val":1}
+mvk: 6,1 {"input":["x42","y42"],"op":"XOR","val":0}
+mwj: 16,1 {"input":["qqs","dbc"],"op":"OR","val":1}
+ndn: 84,1 {"input":["y03","x03"],"op":"XOR","val":1}
+nrr: 5 {"input":["tkc","mvk"],"op":"AND","val":0}
+nrs: 47,4,2 {"input":["mjj","fqr"],"op":"AND","val":0}
+nvq: 34,1 {"input":["wtd","cks"],"op":"OR","val":1}
+pjp: 57 {"input":["wnf","rsk"],"op":"AND","val":0}
+pkh: 73 {"input":["y08","x08"],"op":"AND","val":0}
+pmn: 8,3,1 {"input":["bjf","qkq"],"op":"OR","val":0}
+pmq: 70,1 {"input":["x10","y10"],"op":"XOR","val":0}
+pnj: 19,2 {"input":["y35","x35"],"op":"AND","val":0}
+prt: 3 {"input":["x43","y43"],"op":"AND","val":0}
+ptq: 51 {"input":["y19","x19"],"op":"AND","val":0}
+pvh: 53 {"input":["y18","x18"],"op":"AND","val":0}
+qbq: 43 {"input":["wwn","gwm"],"op":"AND","val":0}
+qdc: 62,1 {"input":["x14","y14"],"op":"XOR","val":0}
+qhk: 15 {"input":["qns","mwj"],"op":"AND","val":1}
+qjq: 80,5,3,1 {"input":["rhr","ccq"],"op":"OR","val":0}
+qkq: 9,4,2 {"input":["jhf","mdn"],"op":"AND","val":0}
+qmr: 4,1 {"input":["y43","x43"],"op":"XOR","val":1}
+qns: 16,1 {"input":["y37","x37"],"op":"XOR","val":1}
+qqp: 50,7,5,3,1 {"input":["twb","ptq"],"op":"OR","val":1}
+qqs: 17 {"input":["hhn","rwh"],"op":"AND","val":0}
+rcf: 41 {"input":["y24","x24"],"op":"AND","val":0}
+rfq: 64,3,1 {"input":["sqg","hfb"],"op":"OR","val":1}
+rhr: 81,6,4,2 {"input":["drd","wkb"],"op":"AND","val":0}
+rjm: 67 {"input":["tmd","shm"],"op":"AND","val":1}
+rjq: 13 {"input":["x38","y38"],"op":"AND","val":1}
+rks: 85 {"input":["x02","y02"],"op":"AND","val":0}
+rsk: 58,1 {"input":["grv","tfs"],"op":"OR","val":1}
+rss: 49,6,4,2 {"input":["msw","qqp"],"op":"AND","val":0}
+rtk: 5 {"input":["y42","x42"],"op":"AND","val":1}
+rvf: 23 {"input":["x33","y33"],"op":"AND","val":1}
+rwf: 61 {"input":["mmr","qdc"],"op":"AND","val":0}
+rwh: 18,1 {"input":["x36","y36"],"op":"XOR","val":0}
+shm: 68,1 {"input":["crj","fgc"],"op":"OR","val":1}
+sjf: 61 {"input":["x14","y14"],"op":"AND","val":1}
+skj: 67 {"input":["x11","y11"],"op":"AND","val":0}
+skn: 13 {"input":["vds","gdk"],"op":"AND","val":0}
+smg: 56,1 {"input":["pjp","vtj"],"op":"OR","val":1}
+snr: 30,1 {"input":["kgw","wms"],"op":"OR","val":0}
+sqg: 65 {"input":["y12","x12"],"op":"AND","val":0}
+srn: 24,1 {"input":["y33","x33"],"op":"XOR","val":0}
+srp: 79,4,2 {"input":["y05","x05"],"op":"AND","val":0}
+sst: 27 {"input":["x31","y31"],"op":"AND","val":0}
+stg: 20,3,1 {"input":["mph","vbp"],"op":"OR","val":1}
+swn: 39 {"input":["x25","y25"],"op":"AND","val":1}
+tff: 66,1 {"input":["rjm","skj"],"op":"OR","val":1}
+tfs: 59 {"input":["x15","y15"],"op":"AND","val":0}
+tfv: 60,1 {"input":["x15","y15"],"op":"XOR","val":1}
+tkc: 6,1 {"input":["vrq","mrt"],"op":"OR","val":0}
+tmd: 68,1 {"input":["x11","y11"],"op":"XOR","val":1}
+tqf: 64,3,1 {"input":["y13","x13"],"op":"XOR","val":0}
+tqm: 55 {"input":["fpd","smg"],"op":"AND","val":1}
+trv: 85 {"input":["cqp","dqm"],"op":"AND","val":1}
+tsf: 52,1 {"input":["gmf","pvh"],"op":"OR","val":1}
+tsn: 54,1 {"input":["tqm","bmp"],"op":"OR","val":1}
+twb: 51 {"input":["tsf","dtb"],"op":"AND","val":1}
+twp: 43 {"input":["x23","y23"],"op":"AND","val":1}
+twt: 74,1 {"input":["x08","y08"],"op":"XOR","val":1}
+vbp: 21 {"input":["x34","y34"],"op":"AND","val":0}
+vds: 14,1 {"input":["jpk","qhk"],"op":"OR","val":1}
+vfb: 87 {"input":["y01","x01"],"op":"AND","val":0}
+vgs: 36,1 {"input":["vvt","wwt"],"op":"OR","val":0}
+vhs: 28,1 {"input":["x31","y31"],"op":"XOR","val":1}
+vjg: 2,1 {"input":["y44","x44"],"op":"XOR","val":0}
+vkk: 63,2 {"input":["tqf","rfq"],"op":"AND","val":0}
+vmw: 71 {"input":["y09","x09"],"op":"AND","val":0}
+vrj: 1 {"input":["x44","y44"],"op":"AND","val":1}
+vrq: 7,2 {"input":["wkh","pmn"],"op":"AND","val":0}
+vtj: 57 {"input":["x16","y16"],"op":"AND","val":1}
+vvt: 37,2 {"input":["bhw","fgv"],"op":"AND","val":0}
+wkb: 82,7,5,3,1 {"input":["y04","x04"],"op":"XOR","val":0}
+wkh: 8,3,1 {"input":["y41","x41"],"op":"XOR","val":1}
+wkq: 60,1 {"input":["sjf","rwf"],"op":"OR","val":1}
+wms: 31,2 {"input":["y29","x29"],"op":"AND","val":0}
+wnf: 58,1 {"input":["y16","x16"],"op":"XOR","val":0}
+wqr: 4,1 {"input":["nrr","rtk"],"op":"OR","val":1}
+wtd: 35 {"input":["knf","vgs"],"op":"AND","val":0}
+wtt: 11,6,4,2 {"input":["jhv","bkq"],"op":"XOR","val":0}
+wtv: 25,2 {"input":["x32","y32"],"op":"AND","val":0}
+wwn: 44,1 {"input":["y23","x23"],"op":"XOR","val":0}
+wwt: 37,2 {"input":["y26","x26"],"op":"AND","val":0}
+x00: 89,1 1
+x01: 88,89 1
+x02: 86,87 0
+x03: 85,84 0
+x04: 83,82,8,7,6,5,4,3,2 0
+x05: 80,81,5,3 1
+x06: 79,78,3 0
+x07: 76,77,2 1
+x08: 75,74 1
+x09: 72,73 0
+x10: 71,70,2 1
+x11: 69,68 0
+x12: 66,67 0
+x13: 64,65,3,4,2 0
+x14: 62,63,2 1
+x15: 61,60 0
+x16: 59,58,2 1
+x17: 57,56 1
+x18: 55,54 0
+x19: 53,52 1
+x20: 51,50,8,7,6,5,4,3,2 0
+x21: 48,49,5,3 0
+x22: 46,47,3 1
+x23: 44,45,2 1
+x24: 42,43 1
+x25: 41,40,2 1
+x26: 39,38,4,3,2 0
+x27: 37,36,2 1
+x28: 35,34 1
+x29: 33,32,4,3,2 0
+x30: 31,30,2 1
+x31: 28,29 0
+x32: 27,26,4,3,2 0
+x33: 24,25,2 1
+x34: 23,22 1
+x35: 20,21,3,4,2 0
+x36: 19,18,2 1
+x37: 16,17 1
+x38: 14,15,2 1
+x39: 12,13,7,5,3 1
+x40: 10,11,5,3 1
+x41: 9,8,3 1
+x42: 7,6,2 1
+x43: 4,5 1
+x44: 2,3,2 1
+y00: 89,1 1
+y01: 88,89 0
+y02: 86,87 1
+y03: 85,84 1
+y04: 83,82,8,7,6,5,4,3,2 0
+y05: 80,81,5,3 0
+y06: 79,78,3 1
+y07: 76,77,2 1
+y08: 75,74 0
+y09: 72,73 1
+y10: 71,70,2 1
+y11: 69,68 1
+y12: 66,67 1
+y13: 64,65,3,4,2 0
+y14: 62,63,2 1
+y15: 61,60 1
+y16: 59,58,2 1
+y17: 57,56 0
+y18: 55,54 1
+y19: 53,52 0
+y20: 51,50,8,7,6,5,4,3,2 0
+y21: 48,49,5,3 1
+y22: 46,47,3 0
+y23: 44,45,2 1
+y24: 42,43 0
+y25: 41,40,2 1
+y26: 39,38,4,3,2 0
+y27: 37,36,2 1
+y28: 35,34 0
+y29: 33,32,4,3,2 0
+y30: 31,30,2 1
+y31: 28,29 1
+y32: 27,26,4,3,2 0
+y33: 24,25,2 1
+y34: 23,22 0
+y35: 20,21,3,4,2 0
+y36: 19,18,2 1
+y37: 16,17 0
+y38: 14,15,2 1
+y39: 12,13,7,5,3 0
+y40: 10,11,5,3 0
+y41: 9,8,3 0
+y42: 7,6,2 1
+y43: 4,5 0
+y44: 2,3,2 1
+z00: 0 {"input":["x00","y00"],"op":"XOR","val":0}
+z01: 0 {"input":["kvc","mtk"],"op":"XOR","val":0}
+z02: 0 {"input":["dqm","cqp"],"op":"XOR","val":0}
+z03: 0 {"input":["htm","ndn"],"op":"XOR","val":0}
+z04: 0 {"input":["wkb","drd"],"op":"XOR","val":1}
+z05: 0 {"input":["qjq","kbj"],"op":"XOR","val":1}
+z06: 0 {"input":["ghf","frn"],"op":"XOR","val":1}
+z07: 0 {"input":["gcf","fhw"],"op":"XOR","val":0}
+z08: 0 {"input":["grg","twt"],"op":"XOR","val":0}
+z09: 0 {"input":["jwv","dgj"],"op":"XOR","val":0}
+z10: 0 {"input":["pmq","hkf"],"op":"XOR","val":1}
+z11: 0 {"input":["shm","tmd"],"op":"XOR","val":0}
+z12: 0 {"input":["tff","fgq"],"op":"XOR","val":0}
+z13: 0 {"input":["rfq","tqf"],"op":"XOR","val":1}
+z14: 0 {"input":["mmr","qdc"],"op":"XOR","val":0}
+z15: 0 {"input":["wkq","tfv"],"op":"XOR","val":0}
+z16: 0 {"input":["wnf","rsk"],"op":"XOR","val":1}
+z17: 0 {"input":["fpd","smg"],"op":"XOR","val":0}
+z18: 0 {"input":["hvs","tsn"],"op":"XOR","val":0}
+z19: 0 {"input":["dtb","tsf"],"op":"XOR","val":0}
+z20: 0 {"input":["msw","qqp"],"op":"XOR","val":1}
+z21: 0 {"input":["mjj","fqr"],"op":"XOR","val":1}
+z22: 0 {"input":["kkq","jsr"],"op":"XOR","val":1}
+z23: 0 {"input":["wwn","gwm"],"op":"XOR","val":0}
+z24: 0 {"input":["kmj","fnh"],"op":"XOR","val":0}
+z25: 0 {"input":["hfj","dtj"],"op":"XOR","val":1}
+z26: 0 {"input":["fgv","bhw"],"op":"XOR","val":1}
+z27: 0 {"input":["knf","vgs"],"op":"XOR","val":0}
+z28: 0 {"input":["chk","nvq"],"op":"XOR","val":0}
+z29: 0 {"input":["kkh","bsb"],"op":"XOR","val":1}
+z30: 0 {"input":["crb","snr"],"op":"XOR","val":0}
+z31: 0 {"input":["dbv","vhs"],"op":"XOR","val":0}
+z32: 0 {"input":["bsn","jgg"],"op":"XOR","val":1}
+z33: 0 {"input":["srn","kth"],"op":"XOR","val":0}
+z34: 0 {"input":["jgv","dkh"],"op":"XOR","val":0}
+z35: 0 {"input":["stg","kdv"],"op":"XOR","val":1}
+z36: 0 {"input":["hhn","rwh"],"op":"XOR","val":0}
+z37: 0 {"input":["mwj","qns"],"op":"XOR","val":0}
+z38: 0 {"input":["vds","gdk"],"op":"XOR","val":1}
+z39: 0 {"input":["bkq","jhv"],"op":"AND","val":1}
+z40: 0 {"input":["jhf","mdn"],"op":"XOR","val":1}
+z41: 0 {"input":["pmn","wkh"],"op":"XOR","val":1}
+z42: 0 {"input":["mvk","tkc"],"op":"XOR","val":0}
+z43: 0 {"input":["wqr","qmr"],"op":"XOR","val":0}
+z44: 0 {"input":["vjg","kmg"],"op":"XOR","val":1}
+z45: 0 {"input":["vrj","gkc"],"op":"OR","val":1}
+[
+  0,
+  'z00{"i":["x00","y00"],"x":"XOR"} z01{"i":["kvc","mtk"],"x":"XOR"} z02{"i":["dqm","cqp"],"x":"XOR"} z03{"i":["htm","ndn"],"x":"XOR"} z04{"i":["wkb","drd"],"x":"XOR"} z05{"i":["qjq","kbj"],"x":"XOR"} z06{"i":["ghf","frn"],"x":"XOR"} z07{"i":["gcf","fhw"],"x":"XOR"} z08{"i":["grg","twt"],"x":"XOR"} z09{"i":["jwv","dgj"],"x":"XOR"} z10{"i":["pmq","hkf"],"x":"XOR"} z11{"i":["shm","tmd"],"x":"XOR"} z12{"i":["tff","fgq"],"x":"XOR"} z13{"i":["rfq","tqf"],"x":"XOR"} z14{"i":["mmr","qdc"],"x":"XOR"} z15{"i":["wkq","tfv"],"x":"XOR"} z16{"i":["wnf","rsk"],"x":"XOR"} z17{"i":["fpd","smg"],"x":"XOR"} z18{"i":["hvs","tsn"],"x":"XOR"} z19{"i":["dtb","tsf"],"x":"XOR"} z20{"i":["msw","qqp"],"x":"XOR"} z21{"i":["mjj","fqr"],"x":"XOR"} z22{"i":["kkq","jsr"],"x":"XOR"} z23{"i":["wwn","gwm"],"x":"XOR"} z24{"i":["kmj","fnh"],"x":"XOR"} z25{"i":["hfj","dtj"],"x":"XOR"} z26{"i":["fgv","bhw"],"x":"XOR"} z27{"i":["knf","vgs"],"x":"XOR"} z28{"i":["chk","nvq"],"x":"XOR"} z29{"i":["kkh","bsb"],"x":"XOR"} z30{"i":["crb","snr"],"x":"XOR"} z31{"i":["dbv","vhs"],"x":"XOR"} z32{"i":["bsn","jgg"],"x":"XOR"} z33{"i":["srn","kth"],"x":"XOR"} z34{"i":["jgv","dkh"],"x":"XOR"} z35{"i":["stg","kdv"],"x":"XOR"} z36{"i":["hhn","rwh"],"x":"XOR"} z37{"i":["mwj","qns"],"x":"XOR"} z38{"i":["vds","gdk"],"x":"XOR"} z39{"i":["bkq","jhv"],"x":"AND"} z40{"i":["jhf","mdn"],"x":"XOR"} z41{"i":["pmn","wkh"],"x":"XOR"} z42{"i":["mvk","tkc"],"x":"XOR"} z43{"i":["wqr","qmr"],"x":"XOR"} z44{"i":["vjg","kmg"],"x":"XOR"} z45{"i":["vrj","gkc"],"x":"OR"}'
+]
+[
+  1,
+  'bhw{"i":["frh","swn"],"x":"OR"} bkq{"i":["y39","x39"],"x":"XOR"} bsb{"i":["gnp","jwb"],"x":"OR"} bsn{"i":["x32","y32"],"x":"XOR"} chk{"i":["y28","x28"],"x":"XOR"} cqp{"i":["vfb","jjp"],"x":"OR"} crb{"i":["x30","y30"],"x":"XOR"} dbv{"i":["htp","kgr"],"x":"OR"} dgj{"i":["bbk","pkh"],"x":"OR"} dkh{"i":["rvf","bqr"],"x":"OR"} dqm{"i":["y02","x02"],"x":"XOR"} drd{"i":["kvt","ftb"],"x":"OR"} dtb{"i":["x19","y19"],"x":"XOR"} dtj{"i":["rcf","gqj"],"x":"OR"} fgq{"i":["y12","x12"],"x":"XOR"} fgv{"i":["y26","x26"],"x":"XOR"} fhw{"i":["mgg","hbf"],"x":"OR"} fnh{"i":["y24","x24"],"x":"XOR"} fpd{"i":["x17","y17"],"x":"XOR"} fqr{"i":["x21","y21"],"x":"XOR"} frn{"i":["srp","jcf"],"x":"OR"} gcf{"i":["x07","y07"],"x":"XOR"} gdk{"i":["y38","x38"],"x":"XOR"} ghf{"i":["y06","x06"],"x":"XOR"} gkc{"i":["vjg","kmg"],"x":"AND"} grg{"i":["krp","mpv"],"x":"OR"} gwm{"i":["cdk","fjh"],"x":"OR"} hfj{"i":["x25","y25"],"x":"XOR"} hhn{"i":["pnj","bcc"],"x":"OR"} hkf{"i":["vmw","bfb"],"x":"OR"} htm{"i":["rks","trv"],"x":"OR"} hvs{"i":["y18","x18"],"x":"XOR"} jgg{"i":["sst","gdw"],"x":"OR"} jgv{"i":["x34","y34"],"x":"XOR"} jhf{"i":["y40","x40"],"x":"XOR"} jhv{"i":["rjq","skn"],"x":"OR"} jsr{"i":["y22","x22"],"x":"XOR"} jwv{"i":["y09","x09"],"x":"XOR"} kbj{"i":["x05","y05"],"x":"XOR"} kdv{"i":["x35","y35"],"x":"XOR"} kkh{"i":["y29","x29"],"x":"XOR"} kkq{"i":["gmq","nrs"],"x":"OR"} kmg{"i":["prt","frs"],"x":"OR"} kmj{"i":["twp","qbq"],"x":"OR"} knf{"i":["x27","y27"],"x":"XOR"} kth{"i":["fpm","wtv"],"x":"OR"} kvc{"i":["x01","y01"],"x":"XOR"} mdn{"i":["gsr","wtt"],"x":"OR"} mjj{"i":["rss","kcf"],"x":"OR"} mmr{"i":["knb","vkk"],"x":"OR"} msw{"i":["x20","y20"],"x":"XOR"} mtk{"i":["x00","y00"],"x":"AND"} mvk{"i":["x42","y42"],"x":"XOR"} mwj{"i":["qqs","dbc"],"x":"OR"} ndn{"i":["y03","x03"],"x":"XOR"} nvq{"i":["wtd","cks"],"x":"OR"} pmn{"i":["bjf","qkq"],"x":"OR"} pmq{"i":["x10","y10"],"x":"XOR"} qdc{"i":["x14","y14"],"x":"XOR"} qjq{"i":["rhr","ccq"],"x":"OR"} qmr{"i":["y43","x43"],"x":"XOR"} qns{"i":["y37","x37"],"x":"XOR"} qqp{"i":["twb","ptq"],"x":"OR"} rfq{"i":["sqg","hfb"],"x":"OR"} rsk{"i":["grv","tfs"],"x":"OR"} rwh{"i":["x36","y36"],"x":"XOR"} shm{"i":["crj","fgc"],"x":"OR"} smg{"i":["pjp","vtj"],"x":"OR"} snr{"i":["kgw","wms"],"x":"OR"} srn{"i":["y33","x33"],"x":"XOR"} stg{"i":["mph","vbp"],"x":"OR"} tff{"i":["rjm","skj"],"x":"OR"} tfv{"i":["x15","y15"],"x":"XOR"} tkc{"i":["vrq","mrt"],"x":"OR"} tmd{"i":["x11","y11"],"x":"XOR"} tqf{"i":["y13","x13"],"x":"XOR"} tsf{"i":["gmf","pvh"],"x":"OR"} tsn{"i":["tqm","bmp"],"x":"OR"} twt{"i":["x08","y08"],"x":"XOR"} vds{"i":["jpk","qhk"],"x":"OR"} vgs{"i":["vvt","wwt"],"x":"OR"} vhs{"i":["x31","y31"],"x":"XOR"} vjg{"i":["y44","x44"],"x":"XOR"} vrj{"i":["x44","y44"],"x":"AND"} wkb{"i":["y04","x04"],"x":"XOR"} wkh{"i":["y41","x41"],"x":"XOR"} wkq{"i":["sjf","rwf"],"x":"OR"} wnf{"i":["y16","x16"],"x":"XOR"} wqr{"i":["nrr","rtk"],"x":"OR"} wwn{"i":["y23","x23"],"x":"XOR"} x00 y00'
+]
+[
+  2,
+  'bcc{"i":["kdv","stg"],"x":"AND"} bjf{"i":["x40","y40"],"x":"AND"} ccq{"i":["x04","y04"],"x":"AND"} cdk{"i":["y22","x22"],"x":"AND"} fjh{"i":["kkq","jsr"],"x":"AND"} fpm{"i":["jgg","bsn"],"x":"AND"} gmq{"i":["x21","y21"],"x":"AND"} gsr{"i":["y39","x39"],"x":"AND"} hbf{"i":["x06","y06"],"x":"AND"} jcf{"i":["kbj","qjq"],"x":"AND"} kcf{"i":["y20","x20"],"x":"AND"} kgw{"i":["kkh","bsb"],"x":"AND"} kmg{"i":["prt","frs"],"x":"OR"} knb{"i":["x13","y13"],"x":"AND"} mgg{"i":["frn","ghf"],"x":"AND"} mrt{"i":["x41","y41"],"x":"AND"} nrs{"i":["mjj","fqr"],"x":"AND"} pnj{"i":["y35","x35"],"x":"AND"} qkq{"i":["jhf","mdn"],"x":"AND"} rhr{"i":["drd","wkb"],"x":"AND"} rss{"i":["msw","qqp"],"x":"AND"} srp{"i":["y05","x05"],"x":"AND"} vjg{"i":["y44","x44"],"x":"XOR"} vkk{"i":["tqf","rfq"],"x":"AND"} vrq{"i":["wkh","pmn"],"x":"AND"} vvt{"i":["bhw","fgv"],"x":"AND"} wms{"i":["y29","x29"],"x":"AND"} wtt{"i":["jhv","bkq"],"x":"XOR"} wtv{"i":["x32","y32"],"x":"AND"} wwt{"i":["y26","x26"],"x":"AND"} x04 x07 x10 x13 x14 x16 x20 x23 x25 x26 x27 x29 x30 x32 x33 x35 x36 x38 x42 x44 y04 y07 y10 y13 y14 y16 y20 y23 y25 y26 y27 y29 y30 y32 y33 y35 y36 y38 y42 y44'
+]
+[
+  3,
+  'bhw{"i":["frh","swn"],"x":"OR"} bkq{"i":["y39","x39"],"x":"XOR"} bsb{"i":["gnp","jwb"],"x":"OR"} bsn{"i":["x32","y32"],"x":"XOR"} drd{"i":["kvt","ftb"],"x":"OR"} fgv{"i":["y26","x26"],"x":"XOR"} fqr{"i":["x21","y21"],"x":"XOR"} frn{"i":["srp","jcf"],"x":"OR"} frs{"i":["qmr","wqr"],"x":"AND"} ghf{"i":["y06","x06"],"x":"XOR"} jgg{"i":["sst","gdw"],"x":"OR"} jhf{"i":["y40","x40"],"x":"XOR"} jhv{"i":["rjq","skn"],"x":"OR"} jsr{"i":["y22","x22"],"x":"XOR"} kbj{"i":["x05","y05"],"x":"XOR"} kdv{"i":["x35","y35"],"x":"XOR"} kkh{"i":["y29","x29"],"x":"XOR"} kkq{"i":["gmq","nrs"],"x":"OR"} mdn{"i":["gsr","wtt"],"x":"OR"} mjj{"i":["rss","kcf"],"x":"OR"} msw{"i":["x20","y20"],"x":"XOR"} pmn{"i":["bjf","qkq"],"x":"OR"} prt{"i":["x43","y43"],"x":"AND"} qjq{"i":["rhr","ccq"],"x":"OR"} qqp{"i":["twb","ptq"],"x":"OR"} rfq{"i":["sqg","hfb"],"x":"OR"} stg{"i":["mph","vbp"],"x":"OR"} tqf{"i":["y13","x13"],"x":"XOR"} wkb{"i":["y04","x04"],"x":"XOR"} wkh{"i":["y41","x41"],"x":"XOR"} x04 x05 x06 x13 x20 x21 x22 x26 x29 x32 x35 x39 x40 x41 x44 y04 y05 y06 y13 y20 y21 y22 y26 y29 y32 y35 y39 y40 y41 y44'
+]
+[
+  4,
+  'bjf{"i":["x40","y40"],"x":"AND"} ccq{"i":["x04","y04"],"x":"AND"} gmq{"i":["x21","y21"],"x":"AND"} gsr{"i":["y39","x39"],"x":"AND"} jcf{"i":["kbj","qjq"],"x":"AND"} kcf{"i":["y20","x20"],"x":"AND"} nrs{"i":["mjj","fqr"],"x":"AND"} qkq{"i":["jhf","mdn"],"x":"AND"} qmr{"i":["y43","x43"],"x":"XOR"} rhr{"i":["drd","wkb"],"x":"AND"} rss{"i":["msw","qqp"],"x":"AND"} srp{"i":["y05","x05"],"x":"AND"} wqr{"i":["nrr","rtk"],"x":"OR"} wtt{"i":["jhv","bkq"],"x":"XOR"} x04 x13 x20 x26 x29 x32 x35 x43 y04 y13 y20 y26 y29 y32 y35 y43'
+]
+[
+  5,
+  'bkq{"i":["y39","x39"],"x":"XOR"} drd{"i":["kvt","ftb"],"x":"OR"} fqr{"i":["x21","y21"],"x":"XOR"} jhf{"i":["y40","x40"],"x":"XOR"} jhv{"i":["rjq","skn"],"x":"OR"} kbj{"i":["x05","y05"],"x":"XOR"} mdn{"i":["gsr","wtt"],"x":"OR"} mjj{"i":["rss","kcf"],"x":"OR"} msw{"i":["x20","y20"],"x":"XOR"} nrr{"i":["tkc","mvk"],"x":"AND"} qjq{"i":["rhr","ccq"],"x":"OR"} qqp{"i":["twb","ptq"],"x":"OR"} rtk{"i":["y42","x42"],"x":"AND"} wkb{"i":["y04","x04"],"x":"XOR"} x04 x05 x20 x21 x39 x40 x43 y04 y05 y20 y21 y39 y40 y43'
+]
+[
+  6,
+  'ccq{"i":["x04","y04"],"x":"AND"} gsr{"i":["y39","x39"],"x":"AND"} kcf{"i":["y20","x20"],"x":"AND"} mvk{"i":["x42","y42"],"x":"XOR"} rhr{"i":["drd","wkb"],"x":"AND"} rss{"i":["msw","qqp"],"x":"AND"} tkc{"i":["vrq","mrt"],"x":"OR"} wtt{"i":["jhv","bkq"],"x":"XOR"} x04 x20 x42 y04 y20 y42'
+]
+[
+  7,
+  'bkq{"i":["y39","x39"],"x":"XOR"} drd{"i":["kvt","ftb"],"x":"OR"} jhv{"i":["rjq","skn"],"x":"OR"} mrt{"i":["x41","y41"],"x":"AND"} msw{"i":["x20","y20"],"x":"XOR"} qqp{"i":["twb","ptq"],"x":"OR"} vrq{"i":["wkh","pmn"],"x":"AND"} wkb{"i":["y04","x04"],"x":"XOR"} x04 x20 x39 x42 y04 y20 y39 y42'
+]
+[
+  8,
+  'pmn{"i":["bjf","qkq"],"x":"OR"} wkh{"i":["y41","x41"],"x":"XOR"} x04 x20 x41 y04 y20 y41'
+]
+[
+  9,
+  'bjf{"i":["x40","y40"],"x":"AND"} qkq{"i":["jhf","mdn"],"x":"AND"} x41 y41'
+]
+[
+  10,
+  'jhf{"i":["y40","x40"],"x":"XOR"} mdn{"i":["gsr","wtt"],"x":"OR"} x40 y40'
+]
+[
+  11,
+  'gsr{"i":["y39","x39"],"x":"AND"} wtt{"i":["jhv","bkq"],"x":"XOR"} x40 y40'
+]
+[
+  12,
+  'bkq{"i":["y39","x39"],"x":"XOR"} jhv{"i":["rjq","skn"],"x":"OR"} x39 y39'
+]
+[
+  13,
+  'rjq{"i":["x38","y38"],"x":"AND"} skn{"i":["vds","gdk"],"x":"AND"} x39 y39'
+]
+[
+  14,
+  'gdk{"i":["y38","x38"],"x":"XOR"} vds{"i":["jpk","qhk"],"x":"OR"} x38 y38'
+]
+[
+  15,
+  'jpk{"i":["y37","x37"],"x":"AND"} qhk{"i":["qns","mwj"],"x":"AND"} x38 y38'
+]
+0111111111011001011011110010110100010110100011
+0101000101001011001010101001011101111011001101
+
+1101000100100100100110011100010010010001110000
+1100111100100100100110011100010010010001110000
+0001111000000000000000000000000000000000000000
+0

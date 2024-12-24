@@ -90,6 +90,19 @@ const getList = c => {
     return one
 }
 
+const swap = (a,b) => {
+    const temp = JSON.parse(JSON.stringify(conns[a]));
+    conns[a] = conns[b];
+    conns[b] = temp;
+}
+// number 1
+swap('z21','gmq');
+//number 2
+swap('z05', 'frn');
+//number 3
+swap('wnf','vtj');
+swap('wtt','z39');
+
 const toNum = c => {
     let one = getList(c);
     let r = BigInt(0);
@@ -107,11 +120,11 @@ const inf = k => {
 }
 let b = Object.keys(level);
 b.sort();
-for (x of b)
+for (let x of b)
     print(x + ': '+ level[x] + ' ' + ((x in conns)?(JSON.stringify(conns[x])):start[x]));
 
 
-for (let i = 0; i < 89; i++){
+for (let i = 0; i < 16; i++){
     let line = [];
     for (let j = 0; j < b.length; j++){
         if (level[b[j]].includes(i))
@@ -122,26 +135,17 @@ for (let i = 0; i < 89; i++){
 
 }
 
-//let x = toNum('x');
-//let y = toNum('y');
-//print((x+y).toString(2));
-//print(z.toString(2));
-//print('000'+((x+y)^z).toString(2));
+x = toNum('x');
+let y = toNum('y');
+print('0'+x.toString(2));
+print('0'+y.toString(2));
+print('')
+print((x+y).toString(2));
+print(z.toString(2));
+print('000'+((x+y)^z).toString(2));
 
 
 // ok I thnink if we can visualize the  structure we can compare it
-print(Object.keys(conns).length);
-
-//lets start with final outputs?
-//
-let Z = getList('z');
-for (let i = 0; i < Z.length; i++){
-    let obj = conns[Z[i]];
-    /*print(obj.input[0]);
-    print(obj.op+'\t'+Z[i]);
-    print(obj.input[1]);
-    print('');*/
-}
 
 // at level 80, you have ccq, rhr, x05,y05. x05 is not on any other elvel
 // at level 48, you're also missing usages of maybe x21
@@ -154,6 +158,12 @@ p(res);
 /*
  * findings
  *
- * there is probbable a long chain
+ * there is probbable a long chain here
+ * looks liek this
+ *
+ * jjp = mtk & kvc
+ * vfb = y01 & x01
+ * kvc = x01 | y01
+ * mtk = x00 & y00 
  *
  **/ 
